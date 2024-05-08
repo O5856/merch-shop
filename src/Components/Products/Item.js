@@ -13,7 +13,7 @@ const Item = ({ item }) => {
     return (
         <div className="item">
             <div className="img-container">
-                <img className='img' src={`./assets/${item.img}.png`} />
+                <img className='img' alt="item" src={`./assets/${item.img}.png`} />
             </div>
             <div className="product-description">
                 <h3>{item.name}</h3>

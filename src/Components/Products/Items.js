@@ -4,7 +4,7 @@ import { useSelector } from "react-redux"
 import dataProducts from "../data/dataProducts"
 import Item from "./Item"
 import { getSelectedCategory } from "../redux/itemsSlice"
-import CartItem from "../Cart/CartItem"
+
 
 
 const Items = () => {

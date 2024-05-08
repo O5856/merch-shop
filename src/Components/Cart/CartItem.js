@@ -10,11 +10,11 @@ const CartItem = ({ cartItem}) => {
 
     return (
         <div className="cart-item">
-            <img className="cart-item-img" src={`./assets/${items.img}.png`}></img>
+            <img className="cart-item-img" src={`./assets/${items.img}.png`} alt="item"></img>
             <p>{items.name}</p>
             <p>{cartItem.quantity}</p>
             <p>${items.price * cartItem.quantity}</p>
-            <span onClick={() => dispatch(removeItemFromCart({ cartItemId: cartItem.id }))}>  <img className="icon" src="https://img.icons8.com/material-outlined/48/000000/trash--v1.png" /> </span>
+            <span onClick={() => dispatch(removeItemFromCart({ cartItemId: cartItem.id }))}>  <img className="icon" alt="icon"src="https://img.icons8.com/material-outlined/48/000000/trash--v1.png" /> </span>
         </div>
             )
 }
