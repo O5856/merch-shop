@@ -1,38 +1,126 @@
-.App {
+.img {
+  width: 200px;
+}
+
+.img-container {
+  width: 200px;
+  height: 350px;
+}
+
+.categories {
+  display: flex;
+ 
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-description {
+  width: 80%;
+}
+
+.item {
+
+  margin: 20px;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(223, 188, 235);
+  padding: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100px;
+  text-align: center;
+  margin: 15px;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.cart-item-img {
+  max-width: 100px;
+}
+
+.categoryButtonSelected {
+  background-color: rgb(131, 239, 144);
+  padding: 10px;
+  margin: 10px;
+}
+
+.categoryButton {
+  background-color: rgb(229, 251, 250);
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.icon {
+  width: 20px
+}
+
+.btn-add-reduce {
+  background-color: rgb(119, 198, 255);
+  padding: 5px 20px 5px 20px;
+  width: 30px;
+  border: none;
+  border-radius: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quantity {
+  padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-to-cart-btn {
+  margin-top: 25px;
+  background-color: rgb(131, 239, 144);
+  padding: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cart-items {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+}
+.cartbtn{
+  margin:10px
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media all and (max-width:1000px) {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .categoryButton {
+    margin: 10px;
+    width: 60px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+.icon-card{
+  .next-card{
+    padding-right:15px;
+    display: block
   }
 }
